@@ -20,8 +20,11 @@
                 <label>Assigned to</label>
                 <select name="state" ng-model="task.assignedUserId" class="span10" ng-options="teamMember.$id() as teamMember.getFullName() for teamMember in teamMembers"></select>
             </div>
+             <hr>
+            <div>
+                <crud-buttons></crud-buttons>
+            </div>
         </form>
     </div>
-    <hr>
-    <crud-buttons></crud-buttons>
+    
 </div>
